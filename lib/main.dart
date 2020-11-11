@@ -9,47 +9,72 @@ class MyProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.purple[100],
         body: SafeArea(
           child: Column(
+
             children: [
               CircleAvatar(
-                backgroundColor: Colors.red,
                 radius: 50.0,
-                backgroundImage: AssetImage('assets/images/obiwan.png'),
+                backgroundImage: AssetImage('assets/images/erizo.png'),
               ),
               Text(
-                'Obi-Wan Kenobi',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.0,
-                  fontFamily: 'PressStart2P',
+                'ERIZO CINTURÓN',
+                  style: TextStyle(
+                  color: Colors.purple,
+                  fontSize: 13.0,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Roboto',
                 ),
               ),
               Text(
-                'Jedi master',
+                'Hedgedog master',
                 style: TextStyle(
                   fontSize: 18.0,
                   fontFamily: 'Roboto',
-                  letterSpacing: 2.5,
+                  letterSpacing: 2,
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 25.0),
                 padding: EdgeInsets.only(left: 10.0, right: 10.0),
                 height: 30.0,
                 color: Colors.white,
                 child: Row(
                   children: [
                     Icon(
-                      Icons.mail_outline_outlined,
+                      Icons.add_ic_call_rounded,
                       size: 20.0,
                     ),
                     SizedBox(
                       width: 10.0,
                     ),
                     Text(
-                      'obi_wan@iessaladillo.es',
+                      '658947512',
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 25.0),
+                padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                height: 30.0,
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.mail_outline_rounded,
+                      size: 20.0,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'sonicelerizo@iessaladillo.es',
                       style: TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 15.0,
